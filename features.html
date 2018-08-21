@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AUTO MECH</title>
+
+    <link href="public/css/style.css" rel="stylesheet" type="text/css">
+    <link href="public/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="public/jquery/dist/jquery.min.js"></script>
+
+    <script src="public/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    &lt;!&ndash; jQuery library &ndash;&gt;
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    &lt;!&ndash; Latest compiled JavaScript &ndash;&gt;
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+    <style>
+        body{
+
+        }
+        .top{
+            background: rgba(161, 161, 162,.4);
+            position: fixed;
+            width: 101%;
+            z-index: 100;
+        }
+        .main-body{
+            position: absolute;
+            margin-top: 176px;
+        }
+        .user{
+            width: 85%;
+            height:300px;
+            color: #fff;
+        }
+        .user div{
+            width: 100%;
+            height: 100%;
+            margin-left: 30px;
+            background-size: 100%;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        .main{
+            padding-top: 180px;
+        }
+        .user div.content{
+            margin: 0;
+            background: #60b2ae;
+            height: 0px;
+            transition: 1s;
+
+
+        }
+        li{
+            list-style: none;
+            margin: 20px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+<div class="row top">
+    <div class="">
+        <div class="head ">
+            <center>
+                <h1>AUTO <span id="mech"> MECH</span></h1>
+                <h4>Complete Online Vehicle Service Management</h4>
+            </center>
+        </div>
+        <div class="nav">
+            <nav class="list">
+                <ul>
+                    <li class="active"><a href="index.php">HOME</a> </li>
+                    <li><a href="about.html">ABOUT</a> </li>
+                    <li><a href="offices.html">CONTACT</a> </li>
+                    <li><a href="features.html">FEATURES</a> </li>
+                    <li>
+                        <div class="login-btn">
+                            <center> <a href="login.php"> <button class="login">LOGIN</button></a></center>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <p id="user"></p>
+
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="row">
+        <div class="row">
+        <div class="col-md-6">
+           <div class="user">
+               <div id="users" onmouseover="display(this)" style="background: url('public/images/car-break.jpg');background-size: 100%;">
+                   <div class="content col-md-12">
+                       <ol class="user-feature">
+                           <li><h4>Login into automech.in</h4></li>
+                           <li><h4>Find nearest service center</h4></li>
+                           <li><h4>Book your service</h4></li>
+                           <li><h4>Contact with service center</h4></li>
+                       </ol>
+                   </div>
+               </div>
+           </div>
+        </div>
+        <div class="col-md-6">
+            <div class="user">
+                <div id="center" onmouseover="display(this)" style="background: url('public/images/center.jpg');background-size: 100%;" >
+                    <div class="content col-md-12">
+                        <ul>
+                            <li>
+                                <h4> Register and login</h4>
+                            </li>
+                            <li>
+                                <h4>Booking management</h4>
+                                <ul>
+                                    <li>
+                                        <h4>View the booking</h4>
+                                    </li>
+                                    <li>
+                                        <h4>Accept notification from the user</h4>
+                                    </li>
+                                    <li><h4>Accept notification from the employee</h4></li>
+                                </ul>
+                            </li>
+                            <li><h4>Employee management</h4></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div content="row">
+        <div class="col-md-6">
+            <div class="user">
+                <div id="employee" onmouseover="display(this)" style="background: url('public/images/employee.jpeg');background-size: 100%;">
+                    <div class="content col-md-12">
+                        <ul>
+                            <li><h4>Login and Register </h4></li>
+                            <li><h4>Accept notification from the user</h4></li>
+                            <li><h4>Call and verify booking </h4></li>
+                            <li><h4>View the bookings </h4></li>
+                            <li><h4>Accept notification from the service center </h4></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6" >
+            <div class="user">
+                <div id="admin" onmouseover="display(this)" style="background: url('public/images/admin.png');background-size: 100%;">
+                    <div class="content col-md-12">
+                        <dl>
+                            <dt><h4>User</h4></dt>
+                            <dd><h5>Manage user accounts and booking</h5></dd>
+                            <dt><h4>Employee</h4></dt>
+                            <dd><h5>Manage employees account and activities</h5></dd>
+                            <dt><h4>Service center</h4></dt>
+                            <dd><h5>Manage service center account and activities</h5></dd>
+                            <dt><h4>Control</h4></dt>
+                            <dd><h5>Control overall workflow of the system</h5></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</div>
+<script>
+
+    function display(e)
+    {
+        $(e).children(".content").css("height","300px")
+
+
+    }
+    $(".content").mouseleave(function () {
+        $(this).css("height","0px");
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Offices</title>
+    <link href="public/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet" type="text/css">
+    <script src="public/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="public/bootstrap/dist/js/bootstrap.min.js"></script>
+    <style>
+        h3{
+            color: #0f0f0f;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body class="featu">
+<div class="row top">
+    <div class="">
+        <div class="head ">
+            <center>
+                <h1>AUTO MECH</h1>
+                <h4>Complete Online Vehicle Service Management</h4>
+            </center>
+        </div>
+        <div class="nav">
+            <nav class="list">
+                <ul>
+                    <li class="active"><a href="index.php">HOME</a> </li>
+                    <li><a href="about.html">ABOUT</a> </li>
+                    <li><a href="offices.html">CONTACT</a> </li>
+                    <li><a href="features.html">FEATURES</a> </li>
+                    <li>
+                        <div class="login-btn">
+                            <center> <a href="login.php"> <button class="login">LOGIN</button></a></center>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</div>
+<div class="row main-body" style="width: 100%">
+    <div class="col-md-12">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#profile" style="float: right;">Profie</button>
+        <table width="80%" border="1" cellspacing="20px" cellpadding="20px" class="offices">
+            <caption><center><h1 style="color: #0E8A0C;font-weight: 600;">Contact</h1></center></caption>
+            <thead>
+            <tr>
+                <th colspan="3"><h1 style="font-family: Loma">MAIN SERVICE CENTERS IN KERALA</h1></th>
+            </tr>
+            <tr style="background: rgba(28, 104, 63,.5)">
+                <th><h2>CITY</h2></th>
+                <th><h2>CAR</h2></th>
+                <th><h2>BIKE</h2></th>
+                <th><h2>JEEP</h2></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td rowspan="2">
+                    <h2>Calicut</h2>
+                </td>
+                <td rowspan="2">
+                    <h2>Malappuram</h2>
+                    <p>Contact:9874563214</p>
+                </td>
+                <td><h2>Calicut</h2>
+                    <p>Contact:98745458546</p></td>
+                <td>
+                    <h2>Trissur</h2>
+                    <p>Contact:9874448454</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Vengara</h2>
+                    <p>Contact:857548464</p>
+                </td>
+                <td>
+                    <h2>Kochi</h2>
+                    <p>Contact:9874458756</p>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <h2>Trivandrum</h2>
+                </td>
+                <td><h2>Perinthalmanna</h2>
+                    <p>Contact:9874897456</p></td>
+                <td rowspan="2"><h2>Palakkad</h2>
+                    <p>Contact:98749874589658</p></td>
+                <td><h2>Mannarkkad</h2>
+                    <p>Contact:8789542145</p></td>
+
+            </tr>
+            <tr>
+                <td><h2>Kottayam</h2>
+                    <p>Contact:9874589548</p></td>
+                <td><h2>Trivandrum</h2>
+                    <p>Contact:8748965478</p></td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <h2>Kochi</h2>
+                </td>
+                <td rowspan="2">
+                    <h2>Wayanad</h2>
+                    <p>Contact:8748954123</p>
+                </td>
+                <td><h2>Trissur</h2>
+                    <p>Contact:9874448454</p></td>
+                <td rowspan="2">
+                    <h2>Trissur</h2>
+                    <p>Contact:9874448454</p></td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Idukki</h2>
+                    <p>Contact:9874874596</p>
+                </td>
+            </tr>
+          <!--  <tr>
+                <td>
+                    111
+                </td>
+                <td rowspan="2">222</td>
+                <td>222</td>
+            </tr>
+            <tr>
+                <td>111</td>
+                <td>222</td>
+            </tr>-->
+            </tbody>
+        </table>
+    </div>
+    <div id="profile" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                   <table class="table">
+                       <tbody>
+                       <tr>
+                           <td><h3 >Name</h3></td>
+                           <td><h3 id="name">asdsada</h3></td>
+                       </tr>
+                       <tr>
+                           <td><h3 >Location</h3></td>
+                           <td><h3 id="place"></h3></td>
+                       </tr>
+                       <tr>
+                           <td><h3 >Contact</h3></td>
+                           <td><h3 id="contact"></h3></td>
+                       </tr>
+                       <tr>
+                           <td><h3 >Manager</h3></td>
+                           <td><h3 id="manager"></h3></td>
+                       </tr>
+                       <tr>
+                           <td><h3 >Mechanic Head</h3></td>
+                           <td><h3 id="mechHead"></h3></td>
+                       </tr>
+                       <tr>
+                           <td><h3 >Employees</h3></td>
+                           <td><h3 id="employees"></h3></td>
+                       </tr>
+                       <tr>
+                           <td colspan="2">
+                               <button type="button" id="edit_profile" class="btn btn-info" data-toggle="modal" data-target="#eprofile" style="float: right;">Edit Profie</button>
+                           </td>
+                       </tr>
+                       </tbody>
+                   </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="eprofile" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <td><h3 >Name</h3></td>
+                            <td><input type="text" class="form-control" id="ename"></td>
+                        </tr>
+                        <tr>
+                            <td><h3 >Location</h3></td>
+                            <td><input type="text" class="form-control" id="eplace"></td>
+                        </tr>
+                        <tr>
+                            <td><h3 >Contact</h3></td>
+                            <td><input type="text" class="form-control" id="econtact"></td>
+                        </tr>
+                        <tr>
+                            <td><h3 >Manager</h3></td>
+                            <td><input type="text" class="form-control" id="emanager"></td>
+                        </tr>
+                        <tr>
+                            <td><h3 >Mechanic Head</h3></td>
+                            <td><input type="text" class="form-control" id="emechHead"></td>
+                        </tr>
+                        <tr>
+                            <td><h3 >Employees</h3></td>
+                            <td><input type="text" class="form-control" id="eemployees"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button class="btn btn-success" onclick="edit()">SUBMIT</button> </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    var center={
+        name:"PVR",
+        place:"Calicut",
+        contact:"7736409656",
+        manager:"Sarath Sathyan",
+        mechHead:"Jayas",
+        employees:"50",
+        vehicles:["Car","Bike"]
+    }
+    display();
+    function display() {
+        document.getElementById("name").innerHTML=center.name;
+        document.getElementById("place").innerHTML=center.place;
+        document.getElementById("contact").innerHTML=center.contact;
+        document.getElementById("manager").innerHTML=center.manager;
+        document.getElementById("mechHead").innerHTML=center.mechHead;
+        document.getElementById("employees").innerHTML=center.employees;
+    }
+
+
+    document.getElementById("ename").value=center.name;
+    document.getElementById("eplace").value=center.place;
+    document.getElementById("econtact").value=center.contact;
+    document.getElementById("emanager").value=center.manager;
+    document.getElementById("emechHead").value=center.mechHead;
+    document.getElementById("eemployees").value=center.employees;
+
+    function edit() {
+        center.name=document.getElementById("ename").value;
+        center.place=document.getElementById("eplace").value;
+        center.contact=document.getElementById("econtact").value;
+        center.manager=document.getElementById("emanager").value;
+        center.mechHead=document.getElementById("emechHead").value;
+        center.employees=document.getElementById("eemployees").value;
+        display();
+        $("#eprofile").modal("hide");
+        $("#profile").modal("show");
+    }
+    $("#edit_profile").click(function () {
+        $("#profile").modal("hide");
+    })
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,370 @@
+.home{
+    /*background: url("../images/bg.jpg");*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.head h1{
+    color: #D62965;
+    font-size: 58px;
+
+}
+.top{
+    background: rgba(161, 161, 162,.4);
+    position: fixed;
+    width: 101%;
+    z-index: 100;
+}
+.head h4{
+    margin-top: 0px;
+    color: #fff;
+}
+.nav li{
+    display: inline-block;
+    padding-left: 10px;
+    color: #FF9ABD;
+}
+.nav{
+    float: right;
+    margin-right:23px;
+    margin-top: -24px;
+}
+.nav li a{
+    color:#FF9ABD;
+    text-decoration: none;
+}
+.main-body{
+    margin-top: 176px;
+    position: absolute;
+}
+.tile{
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 160px;
+    box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.11);
+    transition: 1s;
+}
+.tile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.tile:hover{
+    width:270px;
+    height: 270px;
+    transition-duration: 1s;
+}
+.login{
+    width: 105px;
+    height: 28px;
+    background: #0E8A0C;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.login:hover{
+    box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.11);
+}
+.nav li a:hover{
+    color: #fff;
+}
+.login-body{
+    width: 400px;
+    background: #7EB37D;
+    height: 330px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+.login-body h2{
+    text-align: center;
+    color:#fff;
+}
+.login-body form input{
+    width:90%;
+    border-radius: 30px;
+    width: 90%;
+    margin-left: 12px;
+    padding-left: 10px;
+    height: 41px;
+    margin-top: 29px;
+    border: none;
+}
+.login-body .login{
+    margin: auto;
+    margin-left: 110px;
+    margin-top: 38px;
+    background:#D62965 ;
+}
+.tile h1{
+    padding-left: 152px;
+    color: #fff;
+}
+.contact-body img{
+    width:50px;
+}
+.users{
+    background: url("../images/car-break.jpg");
+    background-size: 100%;
+}
+.employee{
+    background: url("../images/employee.jpeg");
+    background-size: 100%;
+}
+.admin{
+    background: url("../images/admin.png");
+    background-size: 100%;
+}
+.center{
+    background: url("../images/center.jpg");
+    background-size: 100%;
+}
+.features h3{
+    color:#fff;
+}
+h3{
+
+    color: #fff;
+}
+h4{
+    color:#fff;
+    font-weight: 600;
+}
+h5{
+    color:#fff;
+}
+.offices td{
+    padding: 1px;
+    text-align: center;
+}
+.offices th{
+    text-align: center;
+    padding: 1px;
+}
+.featu{
+    background: url("../images/ser-bg.jpg");
+    background-size: 100%;
+}
+.offices{
+    background: rgba(58, 130, 93,.5);
+}
+.offices{
+    color: #fff;
+    margin: auto;
+    margin-top: 0;
+    border-color: tan;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-radius: 24px;
+    box-shadow: 10px 10px 46px 0px rgba(0,0,0,3.11);
+}
+
+.opt-btn{
+    background: #207A25;
+    color: #fff;
+    width: 100px;
+}
+.opt-btn:hover{
+    opacity: .7;
+    color: #fff;
+}
+.form-body{
+    background: #fff;
+    border-radius: 7px;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding-bottom: 10px;
+    opacity:.7;
+    position: absolute;
+    margin-top: 100px;
+}
+.new-form-icon{
+    width: 42px;
+    height: 42px;
+    background: #207A25;
+    border-radius: 7px;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 20px;
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.login-form{
+    margin-top: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.form i{
+    font-size: 20px;
+    color:#A1A4A5  ;
+}
+.form input{
+    border-bottom: solid;
+    border-width: .5px;
+    border-color: #C9CDCF;
+    margin-left: 2%;
+    width: 85%;
+}
+.form-field{
+    padding-top: 20px;
+}
+.task-opn{
+
+}
+.task-opn label{
+    color:#A1A4A5;
+}
+.task-opn input{
+    width:20px;
+    height: 20px;
+}
+.sub-btn{
+    background: #EEB623;
+    font-size: 18px;
+    height: 32px;
+    padding-top: 3px;
+    margin: auto;
+    margin-top: 10px;
+}
+.form textarea:focus, input:focus{
+
+    border: none;
+    outline: none;
+}
+.form textarea{
+    width: 95%;
+}
+
+.login-form .form-control{
+    border: 0;
+}
+.side-menu li img{
+    width: 17px;
+    margin-right: 4px;
+}
+.form label img{
+    width: 20px;
+}
+.new-form-icon img{
+    width: 43px;
+}
+input{
+    border:none;
+}
+textarea{
+    border: none;
+}
+.signup{
+    background: url("../images/tyre_bg.jpg");
+    background-size: 100%;
+
+}
+.about{
+    background: linear-gradient(90deg, rgba(89,151,158,74.843575) 17%, rgba(255,0,78,1) 123%, rgba(194,74,68,1) 100%);
+    background-size: 100%;
+    background: #DFE7EB;
+}
+.about_map{
+    filter:grayscale(51%);
+}
+/*.top{
+    background: rgba(161, 161, 162,.4);
+    position: fixed;
+    width: 101%;
+    z-index: 100;
+    //margin-top: -101px;
+}*/
+.offices td h2{
+    font-size: 15px;
+}
+.offices td{
+    padding: 0;
+}
+.signin .form-body{
+    width: 76%;
+    height: 250px;
+}
+.signin .form-body .sub-btn{
+    margin-top: 33px;
+
+}
+.video video{
+    margin-top: 100px;
+    position: absolute;
+}
+.logo img{
+    width: 154px;
+    margin-left: 38px;
+}
+.parts{
+    background: #fff;
+    width: 100%;
+}
+.parts img{
+    width: 300px;
+    transition: 1s;
+}
+.parts .col-md-4{
+        transition: 1s;
+
+    border: solid;
+    border-width: 1px;
+    border-radius: 12px;
+    color: green;
+    margin: 10px;
+    width: 30%;
+    padding: 20px;
+
+}
+.vehi{
+    color:#42a1f4;
+    font-size: 17px;
+}
+#mech{
+    color: green;
+}
+#cp6{
+    margin-top: -246px;
+}
+#cp4{
+    margin-top: -78px;
+}
+#pass_err{
+    color: red;
+}
+.vehi-list{
+    position: absolute;
+    margin-top: 480px;
+    background: rgba(184, 198, 195,.6);
+    margin-left: 50px;
+    margin-right: 50px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+.vehi-list img{
+    width: 320px;
+    height: 220px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 1s;
+    opacity: .7;
+}
+#user{
+    float: right;
+    position: absolute;
+    top: 31px;
+    z-index: 500;
+    margin-left: 200px;
+    color: #fff;
+}
