@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,6 +46,7 @@
                         <li><a href="about.html">ABOUT</a> </li>
                         <li><a href="offices.html">CONTACT</a> </li>
                         <li><a href="features.html">FEATURES</a> </li>
+                        <li><a href="vehicles.php">BRANDS</a> </li>
                         <?php
                         session_start();
                         if (!$_SESSION["user"]):
@@ -144,7 +146,7 @@
        }
 
    })*/
-function showVehicles(val) {
+/*function showVehicles(val) {
     var v=val.dataset.value;
     console.log(v);
     $(".vehi-list").empty();
@@ -156,7 +158,20 @@ function showVehicles(val) {
         $(".vehi-list").append(html);
 
     }
-}
+}*/
+ function showVehicles(val) {
+     var v=val.dataset.value;
+     console.log(v);
+     $(".vehi-list").empty();
+     window.scrollTo(0,800);
+     for(var i=1;i<=6;i++)
+     {
+         var url="public/images/"+v+i+".jpg";
+         var html="<div class='col-md-4'><img class='img-responsive' src="+url+"></div>"
+         $(".vehi-list").append(html);
+
+     }
+ }
 
 </script>
 </body>
